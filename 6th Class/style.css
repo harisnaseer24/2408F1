@@ -1,0 +1,77 @@
+/* *{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+} */
+
+
+/* Most prior (ye apply hogi) 1st */
+/* #para{
+    color: rgb(103, 0, 246);
+    background-color: rgb(251, 255, 204);
+} */
+
+/* 2nd */
+/* .para1{
+    color: red;
+    background-color: rgb(185, 243, 77);
+} */
+
+
+/* 3rd */
+/* p{
+    color: orange;
+    background-color: green;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:fantasy;
+    box-sizing: border-box;
+    color: white;
+    text-decoration:none ;
+}
+.container{
+    height: 40vh;
+    width: 60%;
+    background-color: rgb(99, 143, 255);
+    border: 4px solid rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.663);
+
+    margin: 13% auto;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#main-head{
+    text-align: center;
+    line-height: 150%;
+    color: rgb(1, 1, 1);
+    /* text-decoration:underline double rgb(0, 0, 0); */
+    text-transform:capitalize;
+    margin: 9px;
+}
+.para{
+    text-align: justify;
+    line-height: 150%;
+    letter-spacing:0.1em;
+    word-spacing: 0.1em;
+    color: rgb(1, 1, 1);
+   
+    text-transform:capitalize;
+    margin: 9px;
+}
+
+.btn{
+
+    text-align: center;
+
+    display: block;
+    height: 50px;
+    width: 160px;
+    margin: auto;
+    background-color: black;
+    padding: 4px;
+    font-size: 20px;
+    border-radius: 40px;
+}
