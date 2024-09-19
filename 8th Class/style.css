@@ -1,0 +1,23 @@
+.container{
+    height: 700px;
+    width: 700px;
+    background-color: rgb(168, 255, 226);
+    border: 1px solid salmon;
+    /* padding: 10px; */
+
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    display: block;
+    margin: 10px;
+
+}
+
+
+ .box:hover{
+    display: none;
+}
+
