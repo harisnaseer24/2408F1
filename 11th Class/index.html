@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+    .container{
+        height: 500px;
+        width: 700px;
+        border: 2px double black;
+        margin: 50px auto;
+    }
+    .ball{
+        box-sizing: border-box;
+        height: 80px;
+        width: 80px;
+       position: relative;
+       top: 0;
+       left: 0;
+        border: 2px double rgb(252, 4, 4);
+        border-radius: 50%;
+        /* background: url('../2nd Class/images/1.png'); */
+        background: rgb(38,223,199);
+        color: white;
+        text-align: center;
+        padding-top:20px;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-text-stroke: 0.6px black;
+        background: radial-gradient(circle, rgba(38,223,199,1) 0%, rgb(164, 166, 50) 35%, rgb(183, 57, 225) 100%);
+        /*animation properties  */
+        animation-name: zigzag;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 2;
+        animation-direction:normal;
+        animation-fill-mode: backwards;
+        animation-play-state: paused;
+          /*animation shorthand property  */
+        animation: zigzag 5s ease-in 0s 2 alternate forwards running ;
+    }
+
+    /* @keyframes zigzag{
+        from{
+            position: relative;
+       top: 0;
+       left: 0;
+        }
+        to{
+            position: relative;
+       top: 80%;
+       left: 85%;
+        }
+    } */
+
+    @keyframes zigzag{
+        0%{
+            position: relative;
+       top: 0;
+       left: 0;
+
+        }
+
+        20%{
+            position: relative;
+       top: 80%;
+       left: 0%;
+        }
+
+        40%{
+            position: relative;
+       top: 80%;
+       left: 40%;
+        }
+
+        60%{
+            position: relative;
+       top: 0%;
+       left:40%;
+        }
+
+        80%{
+            position: relative;
+       top: 0%;
+       left: 85%;
+        }
+
+        100%{
+            position: relative;
+       top: 80%;
+       left: 85%;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+            Hello
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
