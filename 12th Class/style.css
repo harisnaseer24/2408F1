@@ -8,16 +8,18 @@
     margin: auto auto;
 }
 .navbar{
-height: 75px;
+height: auto;
 background-color: rgba(239, 236, 236, 0.752);
 border: 1px solid rgba(181, 181, 181, 0.758);
 display: flex;
 justify-content: center;
 align-items: center;
+gap: 20px;
+flex-wrap: wrap;
 }
-.navitem{
+/* .navitem{
 margin: auto 10px;
-}
+} */
 .logo{
     height: 40px;
 }

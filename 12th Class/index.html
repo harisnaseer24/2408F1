@@ -8,24 +8,35 @@
 .container{
 display: flex;
 flex-direction:row;
-justify-content:baseline;
+justify-content:center;
+align-items: center;
     height: 500px;
-    width: 500px;
+    /* width: 500px; */
     margin: auto;
     border: 1px solid red;
+   flex-wrap: wrap;
+   gap: 20px;
 }
 .box{
     line-height: 40px;
     height: 100px;
-    width: 100px;
+    width: 100px; 
     border: 1px solid black;
-}        
+}    
+#item2{
+    /* order: 2000;
+
+    flex-grow: 2;
+    flex-shrink :3; */
+
+
+}    
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box" style="background-color: red;">1</div>
-        <div class="box"  style="background-color: rgb(100, 233, 4);height: 200px;">2</div>
+        <div class="box" id="item2" style="background-color: rgb(100, 233, 4); ">2</div>
         <div class="box" style="background-color: rgb(255, 238, 0);">3</div>
 
     </div>
