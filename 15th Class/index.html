@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+        
+        <section>
+            <form action="" >
+                <h1>Enter Details</h1>
+               <label for="name">Enter Name:</label>
+                <input type="text" placeholder="Name" value="Haris" id="name" name="name" required>
+                <br>
+                <label for="name">Phone Number:</label>
+                <input type="text" placeholder="Phone Number" id="phno" required>
+
+                <label for="age">Age:</label>
+                <input type="number" placeholder="Enter age" id="age" min="18" max="40">
+                
+                <label for="dp">Profile Picture:</label>
+                <input type="file" id="dp" accept=".jpg,.png,.jpeg">
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" >
+
+                <label for="time">job time</label>
+                <input type="time" id="time" > 
+
+                <label for="email">email</label>
+                <input type="email" id="email" >
+<!-- Radiobutton for selecting one option at a time -->
+                <label for="jobstatus">Are you employed..?</label>
+
+                <input type="radio" name="jobstatus" value="Yes">Yes
+                <input type="radio" name="jobstatus" value="No">No
+<br>
+<br>
+
+<!-- Checkboxes for selecting multiple options at a time -->
+                <label for="Hobbies">Your Hobbies..?</label>
+
+                <input type="checkbox" name="Hobbies" value="Swimming">Swimming
+                <input type="checkbox" name="Hobbies" value="Cricket">Cricket
+                <input type="checkbox" name="Hobbies" value="Reading">Reading
+                <input type="checkbox" name="Hobbies" value="Singing">Singing
+<br>
+<br>
+
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
