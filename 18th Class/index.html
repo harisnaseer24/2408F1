@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Ruge+Boogie&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+        /* desktop */
+.box-section{
+    display: flex;
+    padding: 3%;
+    text-align: center;
+}
+.box1{
+background-color: rgb(255, 158, 39);
+color: rgb(255, 255, 255);
+height: 50%;
+width: 47%;
+font-size: 18px;
+font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+}
+.box2{
+    background-color: rgb(0, 168, 104);
+color: rgb(235, 235, 235);
+    height: 50%;
+    width: 47%;
+    margin:0px 2% ;
+    font-size: 18px;
+    font-family: "Ruge Boogie", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+  letter-spacing: 4px;
+}
+/* Tablet */
+/* minwidth: 430px se upar wali screens p apply hogi */
+/* maxwidth: 700px se neeche wali screens p apply hogi */
+
+@media only screen and ( min-width:430px ) and (max-width:700px) {
+    .box-section{
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+    .box1{
+        background-color: rgb(183, 0, 255);
+        color: yellow;
+        width: 96%;
+        margin: 10px 0;
+        font-size: 22px;
+        /* display: none; */
+    }
+
+    .box2{
+        background-color: rgb(7, 139, 172);
+        color: gold;
+        width: 96%;
+        margin: 0;
+        font-size: 22px;
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and ( max-width:430px) {
+    .box-section{
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+    .box1{
+        background-color: red;
+        color: yellow;
+        width: 96%;
+        margin: 10px 0;
+        font-size: 22px;
+    }
+
+    .box2{
+        background-color: rgb(0, 0, 0);
+        color: gold;
+        width: 96%;
+        margin: 0;
+        font-size: 22px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="box-section">
+            <div class="box1">  
+                 <h1>This is first card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora autem id ex qui cum distinctio eligendi perferendis atque minima ut dolorum, aspernatur voluptatem quia non inventore. Eius, possimus repudiandae.</p>
+            </div>
+            <div class="box2">
+                <h1>This is second card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora autem id ex qui cum distinctio eligendi perferendis atque minima ut dolorum, aspernatur voluptatem quia non inventore. Eius, possimus repudiandae.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
